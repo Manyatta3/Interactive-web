@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>My Interactive Web Page</h1>
+    <nav>
+      <a href="#form-section">Form</a> | 
+      <a href="#counter-section">Counter</a> | 
+      <a href="#color-section">Color Changer</a>
+    </nav>
+  </header>
+
+  <!-- Form Section -->
+  <section id="form-section">
+    <h2>Sign Up Form</h2>
+    <form id="signupForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username"><br>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email"><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password"><br>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <!-- Counter Section -->
+  <section id="counter-section">
+    <h2>Click Counter</h2>
+    <button id="countBtn">Click Me!</button>
+    <p>Button clicked <span id="countDisplay">0</span> times.</p>
+  </section>
+
+  <!-- Color Changer Section -->
+  <section id="color-section">
+    <h2>Background Color Changer</h2>
+    <button id="colorBtn">Change Background Color</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
